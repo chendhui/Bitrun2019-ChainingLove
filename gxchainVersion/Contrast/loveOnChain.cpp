@@ -16,7 +16,7 @@ using namespace graphene;
 class loveOnChain : public contract
 {
   public:
-    helloworld(uint64_t id)
+    loveOnChain(uint64_t id)
         : contract(id)
         , packets(_self, _self)
         // , records(_self, _self)
@@ -91,4 +91,4 @@ class loveOnChain : public contract
     packet_index            packets;
 };
 
-GRAPHENE_ABI(helloworld, (send)(get))
+GRAPHENE_ABI(loveOnChain, (send)(get))
